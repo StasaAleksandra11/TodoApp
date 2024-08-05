@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { toast } from 'react-toastify';
+
 
 
 function TodoComponents({ todoItems, setTodoItems }) {
@@ -19,7 +21,7 @@ function TodoComponents({ todoItems, setTodoItems }) {
 
 	return (
 		<div className='container mx-auto flex flex-col items-center justify-center mt-[50px]'>
-		
+		    <h1 className='text-pink-800 text-3xl font-bold mb-[50px] '>📋 TODO LIST 🖋</h1>
 			<input
 				type='text'
 				placeholder='Insert Your Task . .'
