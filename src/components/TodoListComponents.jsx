@@ -15,7 +15,7 @@ function TodoListComponents({todoItems, setTodoItems}) {
         return <div key={todo.id}
         className=' flex justify-between items-center w-[60%] p-[15px] bg-neutral-100 rounded-2xl border border-pink-800'>
           <h2 className=' font-medium' >{todo.title}</h2>
-          <RiDeleteBack2Line size={24} color='red' onClick={()=>removeTodo(todo.id)} />
+          <RiDeleteBack2Line size={24} color='red' onClick={()=>removeTodo(todo.id)}  />
         </div>
       }) : <h2 className=' font-semibold italic text-pink-800 text-lg'>📍  hej, nemas taskova danas</h2>}
 
